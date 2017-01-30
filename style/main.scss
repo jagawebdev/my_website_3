@@ -5,6 +5,8 @@
 /* 2.0 Contact ========= */
 /* 3.0 Resume ========= */
 /* 4.0 Jaga ========= */
+/* 5.0 Work ========= */
+/* 6.0 Experiments ========= */
 
 /* ************************************* */
 /* 1.0 General ========= */
@@ -109,6 +111,15 @@ button {
     }
 }
 
+ul {
+    list-style: none;
+    padding-left: 12px;
+    a {
+        text-decoration: underline;
+        color: rgba(0,0,0,0.7);
+    }
+}
+
 /* ************************************* */
 /* 2.0 Contact ========= */
 #contact {
@@ -127,12 +138,13 @@ button {
 #resume {
     padding: 80px 0 50px;
     p {
-        margin-left: -15px;
+        margin-right: 100px;
+        margin-bottom: 40px;
     }
 }
 
 .resume_title {
-    width: 80%;
+    width: 85%;
     margin: 0 0 -100px 30px;
     overflow: hidden;
 }
@@ -151,8 +163,46 @@ button {
 }
 
 .jaga_title {
-    width: 80%;
-    margin: 0 0 -150px 230px;
+    width: 70%;
+    margin: 0 0 -150px 180px;
+    overflow: hidden;
+}
+
+/* ************************************* */
+/* 5.0 Work ========= */
+#work {
+    margin-top: 90px;
+    padding: 80px 0 50px;
+    p {
+        margin-left: -50px;
+    }
+}
+
+.work_title {
+    width: 50%;
+    margin: 0px 0 0px 0px;
+    overflow: hidden;
+}
+
+.post-note {
+    background-color: #FFFEE6;
+    padding: 30px 15px 30px 35px;
+    margin-top: -150px;
+}
+
+/* ************************************* */
+/* 6.0 Experiments ========= */
+#experiments {
+    margin-top: 90px;
+    padding: 80px 0 50px;
+    p {
+        margin-left: 0px;
+    }
+}
+
+.experiments_title {
+    width: 70%;
+    margin: 0px 0 -200px -180px;
     overflow: hidden;
 }
 
@@ -168,10 +218,38 @@ button {
     }
     
     #jaga {
-    p {
-        margin-left: 0px;
+        p {
+            margin-left: 0px;
+        }
     }
-}
+    
+    .jaga_title {
+        width: 100%;
+        margin: 0 0 -75px 0px;
+    }
+    
+    #work {
+        padding: 80px 0 50px;
+        p {
+            margin-left: 10px;
+        }
+    }
+    
+    .work_title {
+        width: 100%;
+        margin: 50px 0 0 0;
+        overflow: hidden;
+    }
+    
+    .post-note {
+        margin-top: -40px;
+    }
+    
+    .experiments_title {
+        width: 80%;
+        margin: 0px 0 -250px -40px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width: 880px) {
@@ -183,13 +261,19 @@ button {
     }
 }
 
-/* title re-positioning ========= */
 @media screen and (max-width: 560px) {
     .contact_title {
         width: 100%;
         margin: 0 0 -50px 20px;
     }
     
+    #resume {
+        p {
+            margin-right: 35px;
+            margin-bottom: 40px;
+        }
+    }
+
     .resume_title {
         width: 100%;
         margin: 0 0 -45px 10px;
@@ -211,9 +295,7 @@ button {
         }
     }
     
-    .jaga_title {
+    .experiments_title {
         width: 100%;
-        margin: 0 0 -75px 50px;
     }
 }
-
